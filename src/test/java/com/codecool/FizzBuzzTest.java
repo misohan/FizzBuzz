@@ -7,12 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
 
-
     @Test
     public void shouldConvertTo1(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         Assert.assertEquals("1", fizzBuzz.convert(1));
-
     }
 
     @Test
@@ -25,6 +23,12 @@ class FizzBuzzTest {
     public void shouldConvert5ToBuzz(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         Assert.assertEquals("Buzz", fizzBuzz.convert(5));
+    }
+
+    @Test
+    public void shouldConvertDividableBy5And3ToFizzBuzz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Assert.assertEquals("FizzBuzz", fizzBuzz.convert(15));
     }
 
 }
