@@ -3,6 +3,12 @@ package com.codecool;
 public class FizzBuzz {
 
     public String convert(int i) {
-        return Integer.toString(i);
+
+        if (i % 3 == 0){
+            return "Fizz";
+        }
+        else {
+            return Integer.toString(i);
+        }
     }
 }
