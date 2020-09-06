@@ -21,4 +21,10 @@ class FizzBuzzTest {
         Assert.assertEquals("Fizz", fizzBuzz.convert(3));
     }
 
+    @Test
+    public void shouldConvert5ToBuzz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Assert.assertEquals("Buzz", fizzBuzz.convert(5));
+    }
+
 }
